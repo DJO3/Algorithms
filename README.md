@@ -1,2 +1,2 @@
-# Algorithms
+# algorithms
 Reference for common algorithms
