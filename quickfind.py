@@ -1,5 +1,5 @@
 # O(N**2) - Avoid
-class Quickfind_Eager:
+class QuickFind_Eager:
     def __init__(self, nodes):
         self.array = [num for num in range(nodes)]
 
@@ -16,7 +16,7 @@ class Quickfind_Eager:
 
 
 # O(N) - Still too slow - Avoid
-class Quickfind_Lazy:
+class QuickUnion_Lazy:
     def __init__(self, nodes):
         self.array = [num for num in range(nodes)]
 
@@ -48,5 +48,5 @@ def test_quickfind(quickfind):
     print('4) OK!' if True == t.connected(0,4) else False)
     print('------')
 
-test_quickfind(Quickfind_Eager)
-test_quickfind(Quickfind_Lazy)
+test_quickfind(QuickFind_Eager)
+test_quickfind(QuickUnion_Lazy)
